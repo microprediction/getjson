@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="getjson",
-    version="0.1.0",
+    version="0.1.1",
     description="Conventions used at MicroPrediction.Org",
     long_description=README,
     long_description_content_type="text/markdown",
