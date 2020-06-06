@@ -24,7 +24,7 @@ setup(
     test_suite='pytest',
     tests_require=['pytest'],
     include_package_data=True,
-    install_requires=["backoff"],
+    install_requires=["backoff","requests"],
     entry_points={
         "console_scripts": [
             "microconventions=microconventions.__main__:main",
