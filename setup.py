@@ -7,8 +7,8 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="getjson",
-    version="0.1.1",
-    description="Conventions used at MicroPrediction.Org",
+    version="0.1.2",
+    description="Request JSON data with backoff and failover",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/microprediction/getjson",
