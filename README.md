@@ -25,3 +25,8 @@ Very limited mini-package for retrieving JSON data with backoff and failover
         If you don't like, use backoff directly.
 
     """
+    
+### Usage at microprediction.org
+
+New video tutorials are available at https://www.microprediction.com/python-1 to help you
+get started running crawlers at www.microprediction.com
