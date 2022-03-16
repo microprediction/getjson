@@ -1,9 +1,12 @@
+import grequests   # Must be imported first due to monkey patching :(
 import requests, backoff
 from requests.exceptions import RequestException
+
 
 @backoff.on_exception(backoff.expo, exception=RequestException, max_time=30 )
 def backoff_requests_get(url):
     return requests.get(url)
+
 
 def request_json(url, failover_url=None):
     """ Tries to get json data from a URL for 30 seconds, then tries a failover url

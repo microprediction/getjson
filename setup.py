@@ -7,8 +7,8 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="getjson",
-    version="1.0.0",
-    description="Request JSON data with backoff and failover",
+    version="1.1.0",
+    description="Request JSON data en masse with backoff and failover",
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/microprediction/getjson",
@@ -24,7 +24,7 @@ setup(
     test_suite='pytest',
     tests_require=['pytest'],
     include_package_data=True,
-    install_requires=["backoff","requests"],
+    install_requires=["backoff","requests","grequests"],
     entry_points={
         "console_scripts": [
             "getjson=getjson.__main__:main",
