@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="getjson",
-    version="1.2.2",
+    version="2.0.0",
     description="Request JSON data en masse with backoff and failover",
     long_description=README,
     long_description_content_type="text/markdown",
