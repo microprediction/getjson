@@ -22,9 +22,9 @@ setup(
     ],
     packages=["getjson"],
     test_suite='pytest',
-    tests_require=['pytest'],
+    tests_require=['pytest','grequests'],
     include_package_data=True,
-    install_requires=["backoff","requests","grequests"],
+    install_requires=["backoff","requests"],
     entry_points={
         "console_scripts": [
             "getjson=getjson.__main__:main",
