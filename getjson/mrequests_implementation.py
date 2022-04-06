@@ -8,7 +8,10 @@ def mrequest_json(urls:[str], failover_urls=None)->List:
 
 
 def mrequest_json_no_failover(urls):
-    import grequests
+    try:
+        import grequests
+    except:
+        raise EnvironmentError('pip install grequests')
     rs = (grequests.get(u) for u in urls)
     rs_map = grequests.map(rs)
     return [r.json() for r in rs_map]
