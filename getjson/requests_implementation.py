@@ -1,4 +1,3 @@
-import grequests   # Must be imported first due to monkey patching :(
 import requests, backoff
 from requests.exceptions import RequestException
 
